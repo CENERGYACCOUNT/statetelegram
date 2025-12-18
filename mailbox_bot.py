@@ -1,4 +1,4 @@
-##MTQzNDIzMzU1MzY4MzQ4NDgwNg.GoZ8cB.K79Uh4BG8aWFO-8aEVW8G-XlTidEPyOcsm1N8I
+
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -6,9 +6,9 @@ import random
 import string
 from PIL import Image
 import io
-
+import os
 # === CONFIG ===
-TOKEN = "MTQzNDIzMzU1MzY4MzQ4NDgwNg.GoZ8cB.K79Uh4BG8aWFO-8aEVW8G-XlTidEPyOcsm1N8I"
+TOKEN = os.getenv("DISCORD_TOKEN")
 ADMIN_ROLE_NAME = "The State"
 CATEGORY_NAME = "Mailboxes"
 
@@ -186,3 +186,4 @@ async def mailbox_clear(interaction: discord.Interaction):
 
 
 bot.run(TOKEN)
+

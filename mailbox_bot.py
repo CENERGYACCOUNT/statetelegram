@@ -8,7 +8,7 @@ from PIL import Image
 import io
 import os
 # === CONFIG ===
-TOKEN = os.getenv("DISCORD_TOKEN")
+TOKEN = "MTQzNDIzMzU1MzY4MzQ4NDgwNg.GoZ8cB.K79Uh4BG8aWFO-8aEVW8G-XlTidEPyOcsm1N8I"
 ADMIN_ROLE_NAME = "The State"
 CATEGORY_NAME = "Mailboxes"
 
@@ -186,4 +186,5 @@ async def mailbox_clear(interaction: discord.Interaction):
 
 
 bot.run(TOKEN)
+
 
